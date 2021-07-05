@@ -1,5 +1,5 @@
 html {
-    font-size: 10px;
+    font-size: 16px;
 }
 
 * {
@@ -11,10 +11,11 @@ body {
     padding: 0;
     background-color: rgb(244,244,244);
     color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 small {
@@ -30,4 +31,61 @@ small {
 .title {
     font-size: 4.4rem;
     text-align: center
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: lightgrey;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.search-form > * {
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input {
+    border-radius: .5rem;
+    width: 100%;
+    padding: 0 .25rem;
+    border: none;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    min-width: 250px;
+    width: calc(33.33% - 1rem);
+    text-align: center;
+    background: tomato;
+    color: ivory;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.card__img {
+    max-width: 100%;
+    margin-bottom: .5rem;
+}
+
+.card__desc {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
